@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:ital@0;1&display=swap');
+
+*{
+    font-family: "Lora", serif;
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1673818256391-7d0c3fd7fa26?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body *{
+  z-index: 1;
+}
+
+h1{
+  font-size: 40px;
+  margin: -80px 0 40px;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+  
+  .time h2 {
+    margin: 0 0 5px;
+  }
+  
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 35px;
+    }
+  
+    .time {
+      margin: 5px;
+    }
+  
+    .time h2 {
+      font-size: 12px;
+      margin: 0;
+    }
+  
+    .time small {
+      font-size: 10px;
+    }
+  }
